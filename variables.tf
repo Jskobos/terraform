@@ -22,6 +22,15 @@ variable "ssh_key" {
   default = "~/.ssh/id_rsa.pub"
 }
 
+variable "email" {
+  description = "Email address (used when creating Domains)"
+  default = "prod-test-004@linode.com"
+}
+
+variable "volume_count" {
+  default = 5
+}
+
 resource "random_string" "password" {
   length = 32
   special = true
