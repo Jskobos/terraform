@@ -2,7 +2,7 @@ resource "linode_domain" "foobar" {
   domain = "foobar.example"
   soa_email = "${var.email}"
   type = "master"
-  tags = ["web", "production"]
+  tags = ["weblinode", "production"]
 }
 
 resource "linode_domain_record" "foobar" {
