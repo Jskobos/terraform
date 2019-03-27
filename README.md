@@ -17,6 +17,12 @@ specify, but this is the easiest way to customize the # of Linodes, Volumes, etc
 
 ## Usage
 
+Before running for the first time, run:
+
+`terraform init`
+
+This should install the Linode provider and any other dependencies.
+
 Check the plan:
 
 `terraform plan`
