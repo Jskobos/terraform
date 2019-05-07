@@ -7,7 +7,7 @@ resource "linode_instance" "base-linode" {
     image = "linode/ubuntu18.10"
     root_pass = "${random_string.password.result}"
     private_ip = true
-
+    backups_enabled = true
     provisioner "remote-exec" {
         inline = [
             # install NGINX

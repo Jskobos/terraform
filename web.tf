@@ -11,4 +11,5 @@ resource "linode_instance" "web" {
   type = "g6-standard-2"
   authorized_keys = ["${chomp(file(var.ssh_key))}"]
   root_pass = "${random_string.password.result}"
+  backups_enabled = true
 }
