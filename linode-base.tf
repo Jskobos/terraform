@@ -21,10 +21,5 @@ resource "linode_instance" "base-linode" {
             "apt-get -q -y install nginx",
         ]
 
-        connection {
-            type = "ssh"
-            user = "root"
-            password = "${random_string.password.result}"
-        }
     }
 }

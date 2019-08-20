@@ -26,6 +26,6 @@ resource "linode_nodebalancer_node" "nb-node" {
   mode = "accept"
 }
 
-output "NodeBalancer IP Address" {
-  value = "${linode_nodebalancer.nodebalancer.0.ipv4}"
+output "nodebalancer_ip_address" {
+  value = "${linode_nodebalancer.nodebalancer.ipv4}"
 }
